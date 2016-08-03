@@ -21,6 +21,7 @@ h3 {
 .name {
 	@include fontbasics($title-text, 900, 2.8em);
 	color: $name;
+	word-spacing: 8px;
 
   	text-shadow:
 	    0 1px #000,
