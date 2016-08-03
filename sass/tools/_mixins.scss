@@ -1,0 +1,30 @@
+//MEDIA QUERIES
+
+@mixin breakpoint-tablet {
+	@media (min-width: #{$tablet-width}) and (max-width: #{desktop-width-1px}) {
+		@content;
+	}
+}
+
+@mixin breakpoint-desktop {
+	@media (min-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
+
+//TOP AND BOTTOM MARGINS
+
+@mixin tbmargin($top, $bottom) {
+	margin-top: $top;
+	margin-bottom: $bottom;
+}
+
+//FONT FAMILY WEIGHT AND SIZE 
+
+@mixin fontbasics($family, $weight, $size) {
+	font-family: $family;
+	font-weight: $weight;
+	font-size: $size;
+}
+

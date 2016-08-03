@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	@extend %body-background;
+	margin: $center-item;
+	font-size: 16px;
+
+	@media (min-width: $desktop-width) {
+		max-width: 1200px;
+	}
+}
+
+
+/* ---- Header ---- */
+
+.name {
+		@include tbmargin(15px, 15px);
+
+		@media (min-width: $tablet-width) {
+			margin-top: 45px;
+			margin-bottom: 30px;
+		}
+
+		@media (min-width: $desktop-width) {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+}
+
+
+
+/* ---- Welcome ---- */
+
+.welcome {
+
+	img {
+		@include tbmargin(25px, 25px);
+		max-width: 75%;
+		border: $profile-image;
+		border-radius: 10px;
+
+		@extend %outward-box-shadow;
+		-webkit-transition: box-shadow 1s ease-in-out;
+		transition: box-shadow 1s ease-in-out;
+
+		@media (min-width: $tablet-width) {
+			width: 367px;
+			height: 225px;
+			margin-right: 25px;
+		}
+
+		@media (min-width: $tablet-width) {
+			margin-right: 0;
+		}
+	}
+
+	img:hover {
+		@extend %hover-box-shadow;
+	}
+}
+
+.text-container {
+	p {
+		padding: 0 20px 0 20px;
+		max-width: 500px;
+		margin: $center-item;
+	}	
+	p:first-child {
+		padding-bottom: 10px;
+	}
+}
+
+
+/* ---- Portfolio ---- */
+
+.title {
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.box {
+	img {
+		height: 180px;
+		max-width: 100%;
+		@include tbmargin(20px, 10px);
+		border: $portfolio-images;
+	}
+	p {
+		max-width: 80%;
+	}
+}
+
+
+/* ---- Contact/Footer ---- */
+
+.contact-wrap {
+
+	h1 {
+		padding-bottom: 10px;
+	}
+	p {
+		margin-bottom: 10px
+	}
+}
+	
+
+.icon {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.footer-name {
+	margin-right: auto;
+}
+

@@ -1,0 +1,128 @@
+
+/* ---- Header ---- */
+
+.main-header,
+.welcome {
+	@media (min-width: $desktop-width) {
+		max-width: 1050px;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+}
+
+.header-container {
+	@media (min-width: $desktop-width) {
+		width: 93%;
+		padding-top: 40px;	
+	}
+}
+
+.text-container {
+	@media (min-width: $desktop-width) {	
+		border-left: 3px solid $magenta;
+		border-radius: 30px;
+	}
+}
+
+.welcome {
+	width: 100%;
+	margin: $center-item;
+
+	@media (min-width: $tablet-width) {
+		margin-top: 40px;
+		margin-bottom: 100px;
+	}
+
+	p {
+		@media (min-width: $desktop-width) {
+			margin-right: 30px;
+		}
+	}
+}
+
+/* ---- Portfolio ---- */
+
+.title {
+	@media (min-width: $desktop-width) {
+		margin-top: 100px;
+	}
+}
+
+.wrapper {
+	@media (min-width: $tablet-width) {
+		max-width: 95%;
+		margin: $center-item;
+	}
+
+	@media (min-width: $desktop-width) {
+		max-width: 1050px;
+	}
+}
+
+.container {
+	width: 85%;
+	margin: $center-item;
+	
+	@media (min-width: $tablet-width) {
+		max-width: 95%;
+	}
+}
+
+.box {
+	@media (min-width: $tablet-width){
+		width: 47%;
+		height: 340px;
+	}
+	@media (min-width: $desktop-width) {
+		width: 31%;
+	}
+
+	p {
+		@media (min-width: $tablet-width) {
+			width: 85%;
+		}
+	}
+}
+
+/* ---- Contact/Footer ---- */
+
+.contact-wrap {
+	padding: 10px;
+	margin-top: 80px;
+	margin-bottom: 65px;
+	border-top: $top-border;
+
+	@media (min-width: $tablet-width) {
+		border-bottom: none;
+		padding-top: 30px;
+		padding-bottom: 30px;	
+	}
+
+	p {
+		margin: $center-item;
+
+			@media (min-width: $tablet-width) {
+				max-width: 70%;
+				margin: 0 auto 15px;
+			}
+			@media (min-width: $desktop-width){
+				max-width: 60%;
+			}
+	}
+}
+
+.icon-container {
+	margin: 10px auto;
+}
+
+.footer-container {
+	margin-top: 10px;
+	padding: 15px;
+ 	//border-top: $top-border;
+ 	position: fixed;
+ 	left: 0px;
+ 	bottom: 0px;
+ 	height: 65px;
+ 	width: 100%;
+ 	background-color: $black;
+}

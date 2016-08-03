@@ -1,0 +1,76 @@
+//BOX SHADOWS
+
+%link-box-shadow {
+	-moz-box-shadow: inset 1px 1px 1px 1px darken($magenta, 10%), 1px 1px 1px 1px darken($magenta, 10%);
+	-webkit-box-shadow: inset 1px 1px 1px 1px darken($magenta, 10%), 1px 1px 1px 1px darken($magenta, 10%);
+	box-shadow: inset 1px 1px 1px 1px darken($magenta, 10%), 1px 1px 1px 1px darken($magenta, 10%);
+} 
+
+
+
+%outward-box-shadow {
+	-moz-box-shadow: $outward-shadow;
+	-webkit-box-shadow: $outward-shadow;
+	box-shadow: $outward-shadow;
+}
+
+%hover-box-shadow {
+	-moz-box-shadow: $hover-shadow;
+	-webkit-box-shadow: $hover-shadow;
+	box-shadow: $hover-shadow;
+}
+
+
+//BUTTON BORDERS
+
+%button-border {
+	border-radius: 10px;
+	border: 2px solid $black;
+}
+
+%footer-button-border {
+	border-radius: 10px;
+	border: 2px solid $darkergray;	
+}
+
+
+//TEXT
+
+%general-text {
+	font-family: $general-text;
+	font-weight: 400;
+}
+
+
+//BACKGROUNDS
+
+%link-background {
+	background: $black;
+	background: -webkit-linear-gradient(left, $black, $darkgray, $black);
+	background: -o-linear-gradient(right, $black, $darkgray, $black);
+	background: -moz-linear-gradient(right, $black, $darkgray, $black);
+	background: linear-gradient(to right, $black, $darkgray, $black);
+}
+
+%body-background {
+	background: $black;
+	background: -webkit-linear-gradient($darkergray, $darkgray, $darkergray);
+		background: -o-linear-gradient($darkergray, $darkgray, $darkergray);
+			background: -moz-linear-gradient($darkergray, $darkgray, $darkergray);
+				background: linear-gradient($darkergray, $darkgray, $darkergray);
+}
+
+//FLEXBOX
+
+%flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+%align-center {
+	   -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}

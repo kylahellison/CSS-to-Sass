@@ -1,0 +1,67 @@
+//COLOR PALETTE
+
+$darkgray: #343d46;
+$darkergray: darken($darkgray, 15%);
+$magenta: #C70039;
+$vanilla: #fcfbe3;
+$green: #90bd0b;
+$babyblue: #79bed8;
+$black: #000;
+
+
+//COLOR CONFIG
+
+$secondary-header: $green;
+$name: $vanilla;
+$title: $vanilla;
+$primary-text: lighten($green, 20%);
+$secondary-text: $babyblue;
+$main-border: $black;
+$link-color: $babyblue;
+$link-hover: lighten($magenta, 20%);
+$link-background: $black;
+$contact-link: $magenta;
+$shadow: $babyblue;
+
+
+//MARGINS
+
+$center-item: 0 auto;
+
+
+//FONT STACKS
+
+$general-text: 'Amiri', serif;
+$title-text: 'Cinzel Decorative', cursive;
+
+
+//FONT SIZES
+
+$header1: 3em;
+$header3: 1.3em;
+$title-size: 4em;
+$paragraph: 1em;
+$mobile-footer: 17px;
+$buttons: 22px;
+
+
+//BOX SHADOWS
+
+$inset-shadow: inset 1px 1px 1px 1px lighten($magenta, 20%);
+$outward-shadow: 1px 1px 2px 2px $black;
+$hover-shadow: 2px 2px 3px 3px $black;
+
+//BORDERS
+
+$top-border: 1px solid $main-border;
+$hamburger-line: 4px solid $main-border;
+$main-nav: 3px dotted $main-border;
+$profile-image: 3px solid $main-border;
+$portfolio-images: 2px solid $main-border;
+
+//MEDIA QUERIES
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+

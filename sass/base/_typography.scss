@@ -1,0 +1,144 @@
+h1,
+h3,
+p,
+.header-container,
+.contact,
+.welcome,
+.icon-container {
+	text-align: center;
+}
+
+h1 {
+	@include fontbasics($title-text, 400, $header1);
+}
+
+
+h3 {
+	@extend h1;
+	font-size: $header3;
+}
+
+.name {
+	@include fontbasics($title-text, 900, 2.8em);
+	color: $name;
+
+  	text-shadow:
+	    0 1px #000,
+	    -1px 0 #000,
+	    -1px 2px $darkergray,
+	    -2px 1px #82898d,
+	    -2px 3px $darkergray,
+	    -3px 2px #82898d,
+	    -3px 4px $darkergray,
+	    -4px 3px #000,
+	    -4px 5px #000;
+
+	@media (min-width: $tablet-width) {
+		font-size: $title-size;
+	}
+}
+
+.welcome {
+	p {
+		@extend %general-text;
+		color: $primary-text;
+		font-size: $paragraph;
+		line-height: 1.5;
+	}
+}
+
+.title {
+	@extend %general-text;
+	color: $title;	
+	font-size: $title-size;
+}
+
+.box {
+	p {
+		@extend %general-text;
+		color: $secondary-text;
+		font-size: $paragraph;
+		line-height: 1.5;
+	}
+	h3 {
+		color: $secondary-header;
+		@include tbmargin(10px, 10px)
+	}
+}
+
+.contact-wrap {
+	p {
+		@extend %general-text;
+		color: $secondary-header;
+		font-size: $paragraph;
+		line-height: 1.25;
+	}
+
+	h1 {
+		color: $title;
+
+		@media (min-width: $tablet-width) {
+			font-size: 1.6em;
+		}
+	}
+}
+
+
+/* ---- Link Styles ---- */
+
+a {
+	@include fontbasics($title-text, 400, $buttons);
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a:link,
+.to-top a:link,
+.footer-name,
+.footer-nav a:link {
+	color: $link-color;
+}
+
+a:visited,
+.to-top a:visited,
+.footer-name,
+.footer-nav a:visited {
+	color: $link-color;
+}
+
+a:hover,
+.to-top a:hover,
+.footer-nav a:hover {
+	color: $link-hover;
+}
+
+.contact-link a:link {
+	color: $contact-link;
+}
+
+.contact-link a:visited {
+	color: $contact-link;
+}
+
+.contact-link a:hover {
+	color: lighten($link-background, 5%);
+}
+
+.contact-link a {
+	font-size: $paragraph;
+	@extend %general-text;
+	text-transform: none;
+}
+
+
+.footer-name a,
+.to-top a {
+	font-size: $mobile-footer;
+
+	@media (min-width: $tablet-width) {
+		font-size: $buttons;
+	}
+}
+
+
+

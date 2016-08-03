@@ -1,0 +1,118 @@
+/* ---- Header Nav ---- */
+
+.hamburger {
+	cursor: pointer;
+	padding: 15px;
+	display: block;
+
+	.line {
+		border-bottom: $hamburger-line;
+		width: 35px;
+		margin-bottom: 6px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.line:last-child {
+		margin-bottom: 0;
+	}
+
+	@media (min-width: $tablet-width) {
+		display: none;
+	}
+}
+
+
+.main-nav {	
+	height: 0;
+	overflow: hidden;
+	transition: height 0.3s;
+
+	li {
+		@extend %link-background;
+		list-style-type: none;
+		display: block;
+		max-width: 500px;
+		margin: 5px auto;
+		@extend %button-border;
+
+		@media (min-width: $tablet-width) {
+			margin-left: 5px;	
+		}
+	}
+
+	a {
+		padding: 15px 25px;
+		display: inline-block;		
+		}
+
+	@media (min-width: $tablet-width) {
+		border-top: $main-nav;
+		border-bottom: $main-nav;
+	}
+
+	@media (min-width: $desktop-width) {
+		border-bottom: none;
+		border-top: none;
+		margin-bottom: 0;
+	}
+}
+
+//Will add this class when we want nav to be open. This class must come after earlier style height 0
+.open {
+	height: 210px;
+}
+
+
+/*could not nest this as this media query has to come AFTER the .open code above for the height to work if user widens their browser window past mobile view with hamburger menu open*/
+
+.main-nav {
+	@media (min-width: $tablet-width) {
+		margin: $center-item;
+		width: 500px;
+		height: 70px;
+		transition: none;
+	}	
+}
+
+/* ---- Footer Nav ---- */
+
+.to-top,
+.footer-name,
+.footer-nav li {
+	padding: 5px 7px;
+	@extend %footer-button-border;
+	@extend %link-background;
+}
+
+.footer-nav {
+	display: none;
+
+	@media (min-width: $tablet-width) {
+		display: inline-block;
+		list-style-type: none;
+	}
+
+	li {
+		@media (min-width: $tablet-width) {
+		display: inline-block;
+		text-decoration: none;
+		text-transform: uppercase;
+		}
+	}
+}
+
+/* ---- MEDIA QUERIES ---- */
+
+
+@media (min-width: 768px) {
+
+	.to-top {
+		display: none;
+	}
+
+	.footer-name {
+		list-style-type: none;
+	}
+
+}
