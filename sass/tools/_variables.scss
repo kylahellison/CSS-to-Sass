@@ -17,13 +17,14 @@ $title: $vanilla;
 $primary-text: lighten($green, 20%);
 $secondary-text: $babyblue;
 $main-border: $black;
+$link-background: $black;
 $link-color: $babyblue;
 $link-hover: lighten($magenta, 20%);
-$link-background: $black;
+$contact-link-hover: lighten($black, 5%);
 $contact-link: $magenta;
 $shadow: $babyblue;
 
-
+ 
 //MARGINS
 
 $center-item: 0 auto;
@@ -37,12 +38,15 @@ $title-text: 'Cinzel Decorative', cursive;
 
 //FONT SIZES
 
+$name-base: 2.8em;
 $header1: 3em;
 $header3: 1.3em;
 $title-size: 4em;
 $paragraph: 1em;
 $mobile-footer: 17px;
 $buttons: 22px;
+$contact-tablet-h1: 1.6em;
+$base: 16px;
 
 
 //BOX SHADOWS

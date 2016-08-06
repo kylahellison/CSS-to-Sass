@@ -19,7 +19,7 @@ h3 {
 }
 
 .name {
-	@include fontbasics($title-text, 900, 2.8em);
+	@include fontbasics($title-text, 900, $name-base);
 	color: $name;
 	word-spacing: 8px;
 
@@ -34,8 +34,8 @@ h3 {
 	    -4px 3px #000,
 	    -4px 5px #000;
 
-	@media (min-width: $tablet-width) {
-		font-size: $title-size;
+	@include breakpoint(tablet) {
+		font-size: $title-size;	
 	}
 }
 
@@ -78,8 +78,8 @@ h3 {
 	h1 {
 		color: $title;
 
-		@media (min-width: $tablet-width) {
-			font-size: 1.6em;
+		@include breakpoint(tablet) {
+			font-size: $contact-tablet-h1;
 		}
 	}
 }
@@ -122,7 +122,7 @@ a:hover,
 }
 
 .contact-link a:hover {
-	color: lighten($link-background, 5%);
+	color: $contact-link-hover;
 }
 
 .contact-link a {
@@ -136,7 +136,7 @@ a:hover,
 .to-top a {
 	font-size: $mobile-footer;
 
-	@media (min-width: $tablet-width) {
+	@include breakpoint(tablet) {
 		font-size: $buttons;
 	}
 }

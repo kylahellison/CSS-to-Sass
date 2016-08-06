@@ -8,9 +8,9 @@
 body {
 	@extend %body-background;
 	margin: $center-item;
-	font-size: 16px;
+	font-size: $base;
 
-	@media (min-width: $desktop-width) {
+	@include breakpoint(desktop) {
 		max-width: 1200px;
 	}
 }
@@ -21,12 +21,12 @@ body {
 .name {
 		@include tbmargin(15px, 15px);
 
-		@media (min-width: $tablet-width) {
+		@include breakpoint(tablet) {
 			margin-top: 45px;
 			margin-bottom: 30px;
 		}
 
-		@media (min-width: $desktop-width) {
+		@include breakpoint(desktop) {
 			margin-top: 0;
 			margin-bottom: 0;
 		}
@@ -48,13 +48,13 @@ body {
 		-webkit-transition: box-shadow 1s ease-in-out;
 		transition: box-shadow 1s ease-in-out;
 
-		@media (min-width: $tablet-width) {
+		@include breakpoint(tablet) {
 			width: 367px;
 			height: 225px;
-			margin-right: 25px;
+			margin-right: 25px;		
 		}
 
-		@media (min-width: $tablet-width) {
+		@include breakpoint(desktop) {
 			margin-right: 0;
 		}
 	}

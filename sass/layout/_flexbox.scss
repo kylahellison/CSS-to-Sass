@@ -1,7 +1,7 @@
 /* ---- Header ---- */
 
 .header-container {
-	@media (min-width: $desktop-width) {
+	@include breakpoint(desktop) {
 		display: -webkit-box;
 			display: -ms-flexbox;
 				display: -webkit-flex;
@@ -16,7 +16,7 @@
 }
 
 .main-nav { 
-	@media (min-width: $tablet-width) {
+	@include breakpoint(tablet) {
 		display: -webkit-box;
 			display: -ms-flexbox;
 				display: -webkit-flex;
@@ -27,7 +27,7 @@
 }
 
 .welcome {
-	@media (min-width: $tablet-width) {
+	@include breakpoint(tablet) {
 		display: -webkit-box;
 			display: -ms-flexbox;
 				display: -webkit-flex;
@@ -40,7 +40,7 @@
 				justify-content: center;
 	}
 		img {
-			@media (min-width: $tablet-width) {
+			@include breakpoint(tablet) {
 				-ms-flex-item-align: center;
 					align-self: center;
 			}	
@@ -64,7 +64,7 @@
 }
 
 .wrapper {
-	@media (min-width: $tablet-width) {
+	@include breakpoint(tablet) {
 	    -webkit-box-orient: horizontal;
 	    	-webkit-box-direction: normal;
 	        	-ms-flex-direction: row;
@@ -81,7 +81,7 @@
 }
 
 .text-container {
-	@media (min-width: $tablet-width) {
+	@include breakpoint(tablet) {
 		-ms-flex-item-align: center;
 			align-self: center;
 	    -webkit-box-ordinal-group: 0;
