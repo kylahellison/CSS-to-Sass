@@ -17,8 +17,8 @@
 		margin-bottom: 0;
 	}
 
-	@media (min-width: $tablet-width) {
-		display: none;
+	@include breakpoint(tablet) {
+		display: none;		
 	}
 }
 
@@ -36,22 +36,26 @@
 		margin: 5px auto;
 		@extend %button-border;
 
-		@media (min-width: $tablet-width) {
-			margin-left: 5px;	
+		@include breakpoint(tablet) {
+			margin-left: 5px;			
 		}
 	}
 
 	a {
-		padding: 15px 25px;
-		display: inline-block;		
-		}
+		padding: 10px 20px;
+		display: inline-block;	
 
-	@media (min-width: $tablet-width) {
+		@include breakpoint(desktop) {
+			padding: 15px 25px;		
+		}
+	}
+
+	@include breakpoint(tablet) {
 		border-top: $main-nav;
 		border-bottom: $main-nav;
 	}
 
-	@media (min-width: $desktop-width) {
+	@include breakpoint(desktop){
 		border-bottom: none;
 		border-top: none;
 		margin-bottom: 0;
@@ -67,7 +71,7 @@
 /*could not nest this as this media query has to come AFTER the .open code above for the height to work if user widens their browser window past mobile view with hamburger menu open*/
 
 .main-nav {
-	@media (min-width: $tablet-width) {
+	@include breakpoint(tablet) {
 		margin: $center-item;
 		width: 500px;
 		height: 70px;
@@ -88,31 +92,29 @@
 .footer-nav {
 	display: none;
 
-	@media (min-width: $tablet-width) {
+	@include breakpoint(tablet) {
 		display: inline-block;
 		list-style-type: none;
 	}
 
 	li {
-		@media (min-width: $tablet-width) {
-		display: inline-block;
-		text-decoration: none;
-		text-transform: uppercase;
+		@include breakpoint(tablet) {
+			display: inline-block;
+			text-decoration: none;
+			text-transform: uppercase;
 		}
 	}
 }
 
-/* ---- MEDIA QUERIES ---- */
 
-
-@media (min-width: 768px) {
-
-	.to-top {
+.to-top {
+	@include breakpoint(tablet) {
 		display: none;
 	}
+}
 
-	.footer-name {
+.footer-name {
+	@include breakpoint(tablet) {
 		list-style-type: none;
 	}
-
 }

@@ -194,7 +194,7 @@ body {
       width: 367px;
       height: 225px;
       margin-right: 25px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .welcome img {
       margin-right: 0; } }
 
@@ -356,8 +356,11 @@ body {
       .main-nav li {
         margin-left: 5px; } }
   .main-nav a {
-    padding: 15px 25px;
+    padding: 10px 20px;
     display: inline-block; }
+    @media (min-width: 1024px) {
+      .main-nav a {
+        padding: 15px 25px; } }
   @media (min-width: 768px) {
     .main-nav {
       border-top: 3px dotted #000;
@@ -397,13 +400,14 @@ body {
       text-decoration: none;
       text-transform: uppercase; } }
 
-/* ---- MEDIA QUERIES ---- */
 @media (min-width: 768px) {
   .to-top {
-    display: none; }
+    display: none; } }
 
+@media (min-width: 768px) {
   .footer-name {
     list-style-type: none; } }
+
 /* ---- Header ---- */
 @media (min-width: 1024px) {
   .header-container {
